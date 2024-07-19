@@ -1,0 +1,20 @@
+<div class="container">
+    <header class="header">
+      <h1>Products</h1>
+      <div class="auth-buttons">
+        <button *ngIf="!isLoggedIn" class="btn" (click)="login()">Login</button>
+        <button *ngIf="!isLoggedIn" class="btn" (click)="register()">Register</button>
+        <button *ngIf="!isLoggedIn" class="btn" (click)="logout()">Logout</button>
+      </div>
+    </header>
+    <div *ngIf="products.length === 0">No products available.</div>
+    <div class="product-list" *ngIf="products.length > 0">
+      <div class="product-item" *ngFor="let product of products">
+        <h2>{{ product.name }}</h2>
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <p>{{ product.description }}</p>
+        <p><strong>Price:</strong> ${{ product.price }}</p>
+      </div>
+    </div>
+  </div>
+  

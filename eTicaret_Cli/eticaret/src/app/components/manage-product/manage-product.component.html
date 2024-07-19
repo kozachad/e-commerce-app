@@ -1,0 +1,19 @@
+<div class="container my-5">
+    <header class="header mb-4">
+      <h1 class="text-center">Products</h1>
+    </header>
+    <div *ngIf="products.length === 0" class="alert alert-warning text-center">No products available.</div>
+    <div class="row product-list" *ngIf="products.length > 0">
+      <div class="col-md-4 mb-4" *ngFor="let product of products">
+        <div class="card h-100 shadow-sm">
+          <img [src]="product.image" class="card-img-top" alt="{{ product.name }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

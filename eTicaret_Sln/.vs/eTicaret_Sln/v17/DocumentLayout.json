@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\addtocartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\addtocartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\editproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\editproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\refreshdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\refreshdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\utils\\jwtauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\utils\\jwtauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mesut\\AppData\\Local\\Temp\\cc82b8d7-4c30-44e5-bb01-938dd7006f78_E-Commerence.zip.f78\\skinet-main\\API\\Dtos\\OrderItemDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mesut\\AppData\\Local\\Temp\\b0a91136-862a-4b02-a5be-5495bbb952e9_E-Commerence.zip.2e9\\skinet-main\\API\\Dtos\\OrderDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|c:\\users\\mesut\\onedrive\\desktop\\eticaret\\eticaret_sln\\eticaret\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2313D733-740E-45A6-97CF-CAB7138608F1}|eTicaret\\eTicaret.csproj|solutionrelative:eticaret\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "eTicaret\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAhwBUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:13:07.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Controllers\\CartsController.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "eTicaret\\Controllers\\CartsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAuwB8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T13:04:41.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:20:05.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "eTicaret\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAqwFoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:46:30.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "eTicaret\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAewFoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T05:35:50.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddToCartDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\AddToCartDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\AddToCartDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\AddToCartDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\AddToCartDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:46:33.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Program.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Program.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Program.cs",
+              "RelativeToolTip": "eTicaret\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAewA0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T05:29:19.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\Cart.cs",
+              "RelativeToolTip": "eTicaret\\Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:44:54.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\Product.cs",
+              "RelativeToolTip": "eTicaret\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAowBEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:05:19.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\User.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Models\\User.cs",
+              "RelativeToolTip": "eTicaret\\Models\\User.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T05:36:42.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\EditProductDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\EditProductDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\EditProductDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\EditProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:54:25.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RefreshDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\RefreshDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\RefreshDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\RefreshDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\RefreshDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:50:14.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\RegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:48:15.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\TokenDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\TokenDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\TokenDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\TokenDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:49:18.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JWTAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Utils\\JWTAuthentication.cs",
+              "RelativeDocumentMoniker": "eTicaret\\Utils\\JWTAuthentication.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\Utils\\JWTAuthentication.cs",
+              "RelativeToolTip": "eTicaret\\Utils\\JWTAuthentication.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T05:39:02.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "eTicaret\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "eTicaret\\DTOs\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T06:47:39.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\AppData\\Local\\Temp\\cc82b8d7-4c30-44e5-bb01-938dd7006f78_E-Commerence.zip.f78\\skinet-main\\API\\Dtos\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\cc82b8d7-4c30-44e5-bb01-938dd7006f78_E-Commerence.zip.f78\\skinet-main\\API\\Dtos\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\mesut\\AppData\\Local\\Temp\\cc82b8d7-4c30-44e5-bb01-938dd7006f78_E-Commerence.zip.f78\\skinet-main\\API\\Dtos\\OrderItemDto.cs[Salt Okunur]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\cc82b8d7-4c30-44e5-bb01-938dd7006f78_E-Commerence.zip.f78\\skinet-main\\API\\Dtos\\OrderItemDto.cs[Salt Okunur]",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:32:51.026Z",
+              "EditorCaption": "[Salt Okunur]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\mesut\\AppData\\Local\\Temp\\b0a91136-862a-4b02-a5be-5495bbb952e9_E-Commerence.zip.2e9\\skinet-main\\API\\Dtos\\OrderDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\b0a91136-862a-4b02-a5be-5495bbb952e9_E-Commerence.zip.2e9\\skinet-main\\API\\Dtos\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\mesut\\AppData\\Local\\Temp\\b0a91136-862a-4b02-a5be-5495bbb952e9_E-Commerence.zip.2e9\\skinet-main\\API\\Dtos\\OrderDto.cs[Salt Okunur]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\b0a91136-862a-4b02-a5be-5495bbb952e9_E-Commerence.zip.2e9\\skinet-main\\API\\Dtos\\OrderDto.cs[Salt Okunur]",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:32:43.659Z",
+              "EditorCaption": "[Salt Okunur]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\appsettings.json",
+              "RelativeDocumentMoniker": "eTicaret\\appsettings.json",
+              "ToolTip": "C:\\Users\\mesut\\OneDrive\\Desktop\\ETicaret\\eTicaret_Sln\\eTicaret\\appsettings.json",
+              "RelativeToolTip": "eTicaret\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-16T05:38:49.216Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
