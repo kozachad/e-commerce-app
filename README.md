@@ -40,7 +40,7 @@ This is a comprehensive eCommerce application built with .NET 8 for the backend 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ecommerce-app.git
+    git clone https://github.com/kozachad/ecommerce-app.git
     cd ecommerce-app/backend
     ```
 
