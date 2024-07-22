@@ -116,7 +116,7 @@ namespace eTicaret.Controllers
         }
 
 
-        [HttpGet]// bir sıkıntı var ama ankla
+        [HttpGet]
         [Route("Filter")]
         public IActionResult FilterProducts(string? search = null, double? minPrice = null, double? maxPrice = null)
         {

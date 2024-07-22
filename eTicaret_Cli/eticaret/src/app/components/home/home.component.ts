@@ -7,7 +7,7 @@ import { HttpClient, HttpErrorResponse, HttpEvent, HttpHandler, HttpRequest } fr
 import { catchError, map, Observable, switchMap, throwError } from 'rxjs';
 import { TokenResponse } from '../../interfaces/token-response';
 import { ProductService } from '../../services/product-service';
-import { LoginComponent } from '../login/login.component';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-home',
@@ -29,10 +29,12 @@ export class HomeComponent {
   search: string = '';
   minPrice?: number ;
   maxPrice?: number ;
+  userId? : number;
 
   constructor(
     private http: HttpClient,
-    private productService : ProductService
+    private productService : ProductService,
+    private cartService : CartService
   ){
     this.user = JSON.parse(localStorage.getItem("Id") ?? "");
     this.userName = this.user.name;
@@ -82,6 +84,9 @@ export class HomeComponent {
   manageProduct(){
     this.route.navigate(['/manageProduct']);
   }
+  goToBasket(){
+    this.route.navigate(['/basket']);
+  }
 
   register() {
     this.route.navigate(['/register']);
@@ -109,6 +114,23 @@ export class HomeComponent {
         }
       })
     );
+  }
+
+  addToCart(productId: number): void {
+    this.userId = parseInt(this.user.id,10);
+    if (this.userId !== null) {
+      const request = { userId: this.userId, productId };
+      this.cartService.addToCart(request).subscribe(
+        (response) => {
+          console.log(response);
+        },
+        (error) => {
+          console.error('There was an error!', error);
+        }
+      );
+    } else {
+      console.error('User not logged in.');
+    }
   }
 
 

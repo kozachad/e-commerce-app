@@ -24,6 +24,7 @@ namespace eTicaret.Controllers
                 return new List<Product>();
             }
 
+
             return cart.Products.ToList();
         }
 
@@ -58,7 +59,7 @@ namespace eTicaret.Controllers
                 context.SaveChanges();
             }
 
-            return Ok("Product added to cart.");
+            return Ok(product);
         }
 
 

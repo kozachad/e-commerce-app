@@ -1,4 +1,6 @@
-﻿namespace eTicaret.Models
+﻿using System.Text.Json.Serialization;
+
+namespace eTicaret.Models
 {
     public class Product
     {
@@ -14,6 +16,7 @@
         public int UserId { get; set; }
 
         public User? user { get; set; }
+        [JsonIgnore]
 
         public List<Cart> Carts { get; set; } = new List<Cart>();
 

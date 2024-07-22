@@ -1,1 +1,18 @@
-<p>basket works!</p>
+<div class="container">
+    <header class="header">
+      <h1>My Basket</h1>
+    </header>
+  
+    <div class="cart">
+      <h2>My Cart</h2>
+      <div *ngIf="cartItems.length === 0">No items in cart.</div>
+      <div class="cart-list" *ngIf="cartItems.length > 0">
+        <div class="cart-item" *ngFor="let item of cartItems">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <p><strong>Price:</strong> ${{ item.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

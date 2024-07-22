@@ -4,8 +4,9 @@
     <div class="auth-buttons">
       <button *ngIf="!isLoggedIn" class="btn" (click)="login()">Login</button>
       <button *ngIf="!isLoggedIn" class="btn" (click)="register()">Register</button>
-      <button *ngIf="isLoggedIn" class="btn" (click)="logout()">Logout</button>
-      <button *ngIf="isLoggedIn" class="btn" (click)="manageProduct()">Manage Products</button>
+      <button *ngIf="!isLoggedIn" class="btn" (click)="logout()">Logout</button>
+      <button *ngIf="!isLoggedIn" class="btn" (click)="manageProduct()">Manage Products</button>
+      <button *ngIf="!isLoggedIn" class="btn" (click)="goToBasket()">View Cart</button>
     </div>
   </header>
 
@@ -25,6 +26,7 @@
       <img [src]="product.image" alt="{{ product.name }}" />
       <p>{{ product.description }}</p>
       <p><strong>Price:</strong> ${{ product.price }}</p>
+      <button class="btn" (click)="addToCart(product.id)">Add to Cart</button>
     </div>
   </div>
 </div>
