@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 import { CartRequest } from '../interfaces/cart-request';
 import { ProductRequest } from '../interfaces/product-request';
@@ -45,6 +45,23 @@ export class ProductService {
     );
   }
 
+  filterProducts(search?: string, minPrice?: number, maxPrice?: number): Observable<any> {
+    let params = new HttpParams();
+    if (search) {
+      params = params.set('search', search);
+    }
+    if (minPrice !== null && minPrice !== undefined) {
+      params = params.set('minPrice', minPrice.toString());
+    }
+    if (maxPrice !== null && maxPrice !== undefined) {
+      params = params.set('maxPrice', maxPrice.toString());
+    }
+
+    return this.http.get<any>(`https://localhost:7189/api/Product/FilterProducts/Filter`, { params }).pipe(
+      map(response => response.$values || [])
+  );
+  }
+
   updateProduct(Id: number, product: ProductRequest): Observable<ProductRequest> {
     //const token = this.authService.getToken();
     //let header = new HttpHeaders().set("Authorization","bearer "+token)
@@ -53,22 +70,6 @@ export class ProductService {
 
   deleteProduct(Id : number): Observable<void> {
     return this.http.delete<void>('https://localhost:7189/api/Product/DeleteProduct?id='+ Id);
-  }
-
-  getProducts(search?: string, minPrice?: number, maxPrice?: number): Observable<any> {
-    let params: any = {};
-
-    if (search) {
-      params.search = search;
-    }
-    if (minPrice) {
-      params.minPrice = minPrice;
-    }
-    if (maxPrice) {
-      params.maxPrice = maxPrice;
-    }
-
-    return this.http.get<any>(this.apiUrl, { params });
   }
 
   uploadImage(file: File): Observable<{url : string}> {

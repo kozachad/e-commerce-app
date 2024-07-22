@@ -117,9 +117,10 @@ namespace eTicaret.Controllers
 
 
         [HttpGet]// bir sıkıntı var ama ankla
+        [Route("Filter")]
         public IActionResult FilterProducts(string? search = null, double? minPrice = null, double? maxPrice = null)
         {
-            var products = context.Products.AsQueryable();
+            var products = context.Products.AsQueryable().Where(p=> p.isDeleted==false);
 
             if (!string.IsNullOrEmpty(search))
             {

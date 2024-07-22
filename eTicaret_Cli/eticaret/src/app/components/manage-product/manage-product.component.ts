@@ -98,7 +98,6 @@ export class ManageProductComponent implements OnInit {
   
 
   onSubmit(): void {
-    debugger;
     if (this.editForm.valid && this.selectedProduct) {
       const updatedProduct = { ...this.selectedProduct, ...this.editForm.value };
       console.log('Updating product: ', updatedProduct); // Debugging line
@@ -106,7 +105,6 @@ export class ManageProductComponent implements OnInit {
   
       if (this.selectedFile) {
         console.log('Selected file: ', this.selectedFile); // Debugging line
-        debugger;
         this.productService.uploadImage(this.selectedFile).subscribe(
           (imageUrl) => {
             console.log('Image uploaded successfully: ', imageUrl.url); // Debugging line

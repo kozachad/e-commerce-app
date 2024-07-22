@@ -26,6 +26,9 @@ export class HomeComponent {
   private refreshToken = 'refreshToken';
   private isRefreshing = false;
   isLoggedIn = false;
+  search: string = '';
+  minPrice?: number ;
+  maxPrice?: number ;
 
   constructor(
     private http: HttpClient,
@@ -50,15 +53,6 @@ export class HomeComponent {
     });
   }
 
-  loadProducts(): void {
-    this.productService.getProducts().subscribe((data)=>
-    {
-      this.products = data;
-    },
-  (error)=>{
-    console.error("error fetching products",error);
-  })
-  }
 
   getToken(): string | null {
     return localStorage.getItem(this.tokenKey);
@@ -67,6 +61,22 @@ export class HomeComponent {
   login(){
     this.route.navigate(['/login']);
     this.isLoggedIn = true;
+  }
+
+  filterProducts(): void {
+    if (event) {
+      event.preventDefault();
+    }
+
+    this.productService.filterProducts(this.search, this.minPrice, this.maxPrice).subscribe(
+      (data) => {
+        console.log('Filtered Products:', data); // Gelen veriyi konsolda görüntüleme
+        this.products = data;
+      },
+      (error) => {
+        console.error('There was an error!', error);
+      }
+    );
   }
 
   manageProduct(){
@@ -81,6 +91,7 @@ export class HomeComponent {
       console.log("Disconnected");
       localStorage.clear();
       this.route.navigate(['/login']);
+      this.isLoggedIn = false;
   }
   
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
