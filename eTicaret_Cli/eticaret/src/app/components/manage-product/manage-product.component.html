@@ -1,19 +1,51 @@
 <div class="container my-5">
-    <header class="header mb-4">
-      <h1 class="text-center">Products</h1>
-    </header>
-    <div *ngIf="products.length === 0" class="alert alert-warning text-center">No products available.</div>
-    <div class="row product-list" *ngIf="products.length > 0">
-      <div class="col-md-4 mb-4" *ngFor="let product of products">
-        <div class="card h-100 shadow-sm">
-          <img [src]="product.image" class="card-img-top" alt="{{ product.name }}" />
-          <div class="card-body">
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">{{ product.description }}</p>
-            <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
-          </div>
+  <header class="header mb-4 d-flex justify-content-between align-items-center">
+    <h1 class="text-center flex-grow-1">Products</h1>
+    <div class="button-group">
+      <button (click)="goHome()" class="btn btn-outline-primary me-2">Home</button>
+      <button (click)="addNewProduct()" class="btn btn-outline-success">Add New Product</button>
+    </div>
+  </header>
+  <div *ngIf="products.length === 0" class="alert alert-warning text-center">No products available.</div>
+  <div class="row product-list" *ngIf="products.length > 0">
+    <div class="col-md-4 mb-4" *ngFor="let product of products">
+      <div class="card h-100 shadow-sm">
+        <img src="product.image" class="card-img-top" alt="{{ product.name }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
+          <button (click)="editProduct(product)" class="btn btn-primary">Edit</button>
+          <button (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</button>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- Edit Form -->
+  <div *ngIf="selectedProduct" class="edit-form mt-5">
+      <h2>Edit Product</h2>
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" formControlName="name" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="description">Description</label>
+              <input id="description" type="text" formControlName="description" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="price">Price</label>
+              <input id="price" type="number" formControlName="price" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="file">Upload Image</label>
+              <input id="image" type="file" (change)="onFileChange($event)" #fileInput  class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Save</button>
+          <button type="button" (click)="cancelEdit()" class="btn btn-secondary">Cancel</button>
+          <button type="button" (click)="clearFileInput(fileInput)">Clear</button>
+
+      </form>
+  </div>
+</div>

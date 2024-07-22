@@ -26,7 +26,6 @@ export class RegisterComponent {
   {}
 
   register(data: RegisterRequest): Observable<any>{
-    //debugger;
     const url = 'https://localhost:7189/api/Auth/Register';
     return this.http.post(url,data);
   }

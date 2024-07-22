@@ -41,7 +41,6 @@ export class HomeComponent {
   }
 
   getAllProducts(): void {
-    debugger;
     this.productService.getAllProducts().subscribe((data)=> {
       console.log("ss0",data);
       this.products = data;
@@ -68,6 +67,10 @@ export class HomeComponent {
   login(){
     this.route.navigate(['/login']);
     this.isLoggedIn = true;
+  }
+
+  manageProduct(){
+    this.route.navigate(['/manageProduct']);
   }
 
   register() {

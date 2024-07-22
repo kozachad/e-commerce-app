@@ -1,0 +1,18 @@
+# .gitignore
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.log
+*.pdb
+*.cache
+*.ilk
+*.aps
+*.pch
+*.vspscc
+.vscode/
+node_modules/
+dist/
+wwwroot/

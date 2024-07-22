@@ -39,7 +39,6 @@ export class ProductService {
     
 
   getUserProducts(): Observable<any>{
-    debugger;
     var realId = this.getUserRealId();
     return this.http.get<any>("https://localhost:7189/api/Product/GetProductsById?userId=" + realId).pipe(
         map(response => response.$values || [])
@@ -52,8 +51,11 @@ export class ProductService {
     return this.http.put<ProductRequest>(`https://localhost:7189/api/Product/EditProduct?id=`+Id, product);
 }
 
+  deleteProduct(Id : number): Observable<void> {
+    return this.http.delete<void>('https://localhost:7189/api/Product/DeleteProduct?id='+ Id);
+  }
+
   getProducts(search?: string, minPrice?: number, maxPrice?: number): Observable<any> {
-    debugger;
     let params: any = {};
 
     if (search) {
@@ -67,5 +69,13 @@ export class ProductService {
     }
 
     return this.http.get<any>(this.apiUrl, { params });
+  }
+
+  uploadImage(file: File): Observable<{url : string}> {
+    const formData: FormData = new FormData();
+    formData.append('file', file, file.name);
+    console.log('FormData:', formData); // Debugging line
+
+    return this.http.post<{url : string}>(`https://localhost:7189/api/Product/UploadImage`, formData);
   }
 }

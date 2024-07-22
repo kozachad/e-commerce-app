@@ -42,28 +42,11 @@ namespace eTicaret.Controllers
         }
 
 
-
-        /*[HttpGet]
-        public List<Product> GetMyItems(int userId)
-        {
-            List<Product> product = new List<Product>();
-            Cart card = context.Carts.Where(c => c.userId == userId).FirstOrDefault();
-
-            foreach (var item in card.Products)
-            {
-                product.Add(item);
-            }
-
-            return product;
-        }*/
-
-
-
         [HttpGet]
         public IActionResult GetProductsById(int userId)
         {
             var products = context.Products
-                .Where(p => p.UserId == userId)
+                .Where(p => p.UserId == userId && p.isDeleted == false)
                 .OrderBy(p => p.Id)
                 .ToList();
 
@@ -90,6 +73,7 @@ namespace eTicaret.Controllers
             td.Name = request.Name;
             td.Description = request.Description;
             td.Price = request.Price;
+            td.Image = request.Image;
 
             context.SaveChanges();
 
@@ -111,6 +95,24 @@ namespace eTicaret.Controllers
 
             context.SaveChanges();
             return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadImage([FromForm] IFormFile file)
+        {
+            if(file == null || file.Length == 0)
+            {
+                return BadRequest("no file uploaded");
+            }
+
+            var filePath = Path.Combine("wwwroot/images", file.FileName);
+            using (var stream = new FileStream(filePath,FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            var imageUrl = Url.Content($"~/images/{file.FileName}");
+            return Ok(new { url = imageUrl });
         }
 
 
