@@ -56,7 +56,6 @@ export class ProductService {
     if (maxPrice !== null && maxPrice !== undefined) {
       params = params.set('maxPrice', maxPrice.toString());
     }
-
     return this.http.get<any>(`https://localhost:7189/api/Product/FilterProducts/Filter`, { params }).pipe(
       map(response => response.$values || [])
   );

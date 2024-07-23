@@ -111,7 +111,7 @@ namespace eTicaret.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            var imageUrl = Url.Content($"~/images/{file.FileName}");
+            var imageUrl = Url.Content("/images/" + file.FileName);
             return Ok(new { url = imageUrl });
         }
 

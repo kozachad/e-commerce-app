@@ -25,7 +25,7 @@ namespace eTicaret.Controllers
             }
 
 
-            return cart.Products.ToList();
+            return cart.Products.Where(p=> p.isDeleted == false).ToList();
         }
 
         [HttpPost]
@@ -60,6 +60,30 @@ namespace eTicaret.Controllers
             }
 
             return Ok(product);
+        }
+
+        [HttpPost]
+        [Route("DeleteProduct")]
+        public IActionResult Delete(DeleteProductInCard request)
+        {
+            var cart = context.Carts
+                .Include(c => c.Products)
+                .FirstOrDefault(c=> c.userId == request.userId);
+
+            if (cart == null)
+            {
+                return BadRequest();
+            }
+
+            var product = context.Products.Find(request.productId);
+
+            if (product != null)
+            {
+                cart.Products.Remove(product);
+                context.SaveChanges();
+            }
+
+            return Ok();
         }
 
 

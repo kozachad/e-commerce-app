@@ -1,18 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Basket</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .cart-img {
+      border-radius: 10px;
+      width: 100px; /* Genişliği ayarlayın */
+      height: 100px; /* Yüksekliği ayarlayın, genişlikle aynı olmalı */
+      object-fit: cover; /* Resmin kesilmeden sığmasını sağlar */
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .cart-item-details {
+      margin-left: 15px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f8f9fa;
+      padding-bottom: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .home-button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
 <div class="container">
-    <header class="header">
-      <h1>My Basket</h1>
-    </header>
-  
-    <div class="cart">
-      <h2>My Cart</h2>
-      <div *ngIf="cartItems.length === 0">No items in cart.</div>
-      <div class="cart-list" *ngIf="cartItems.length > 0">
-        <div class="cart-item" *ngFor="let item of cartItems">
+  <header class="header">
+    <h1>My Basket</h1>
+    <button class="btn btn-primary home-button" (click)="goHome()">Home</button>
+  </header>
+
+  <div class="cart">
+    <h2>My Cart</h2>
+    <div *ngIf="cartItems.length === 0" class="empty-cart">No items in cart.</div>
+    <div class="cart-list" *ngIf="cartItems.length > 0">
+      <div class="cart-item" *ngFor="let item of cartItems">
+        <img [src]="getImageUrl(item.image)" class="cart-img" alt="{{ item.name }}" />
+        <div class="cart-item-details">
           <h3>{{ item.name }}</h3>
           <p>{{ item.description }}</p>
           <p><strong>Price:</strong> ${{ item.price }}</p>
+          <button class="btn btn-danger" (click)="deleteProductInCard(item.id)">Remove Product</button>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <div class="order-summary" *ngIf="cartItems.length > 0">
+    <h2>Order Summary</h2>
+    <p><strong>Total Items:</strong> {{ cartItems.length }}</p>
+    <p><strong>Shipping Fee:</strong> $19.99</p>
+    <p><strong>Total Price:</strong> ${{ getTotalPrice() + 19.99 }}</p>
+    <button class="btn btn-success checkout-button">Proceed to Checkout</button>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.css']
+  styleUrl: './add-product.component.css'
 })
 export class AddProductComponent {
   newProduct: ProductRequest = {

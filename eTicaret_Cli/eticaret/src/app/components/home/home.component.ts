@@ -72,7 +72,7 @@ export class HomeComponent {
 
     this.productService.filterProducts(this.search, this.minPrice, this.maxPrice).subscribe(
       (data) => {
-        console.log('Filtered Products:', data); // Gelen veriyi konsolda görüntüleme
+        console.log('Filtered Products:', data.$values || []); // Gelen veriyi konsolda görüntüleme
         this.products = data;
       },
       (error) => {
@@ -131,6 +131,12 @@ export class HomeComponent {
     } else {
       console.error('User not logged in.');
     }
+  }
+
+  getImageUrl(url : string): string {
+    var realUrl = `https://localhost:7189${url}`;
+    console.log("url?",realUrl);
+    return realUrl;
   }
 
 

@@ -1,32 +1,44 @@
-<div class="container">
-  <header class="header">
+<div class="container my-5">
+  <header class="header d-flex justify-content-between align-items-center mb-4">
     <h1>Products</h1>
     <div class="auth-buttons">
-      <button *ngIf="!isLoggedIn" class="btn" (click)="login()">Login</button>
-      <button *ngIf="!isLoggedIn" class="btn" (click)="register()">Register</button>
-      <button *ngIf="!isLoggedIn" class="btn" (click)="logout()">Logout</button>
-      <button *ngIf="!isLoggedIn" class="btn" (click)="manageProduct()">Manage Products</button>
-      <button *ngIf="!isLoggedIn" class="btn" (click)="goToBasket()">View Cart</button>
+      <button *ngIf="!isLoggedIn" class="btn btn-primary me-2" (click)="login()">Login</button>
+      <button *ngIf="!isLoggedIn" class="btn btn-primary me-2" (click)="register()">Register</button>
+      <button *ngIf="!isLoggedIn" class="btn btn-secondary me-2" (click)="logout()">Logout</button>
+      <button *ngIf="!isLoggedIn" class="btn btn-secondary me-2" (click)="manageProduct()">Manage Products</button>
+      <button *ngIf="!isLoggedIn" class="btn btn-secondary" (click)="goToBasket()">View Cart</button>
     </div>
   </header>
 
-  <div class="filter-form">
-    <form (submit)="filterProducts()">
-      <input type="text" [(ngModel)]="search" placeholder="Search" name="search" />
-      <input type="number" [(ngModel)]="minPrice" placeholder="Min Price" name="minPrice" />
-      <input type="number" [(ngModel)]="maxPrice" placeholder="Max Price" name="maxPrice" />
-      <button type="submit" class="btn">Filter</button>
+  <div class="filter-form mb-4">
+    <form (submit)="filterProducts()" class="row g-2">
+      <div class="col-md-3">
+        <input type="text" [(ngModel)]="search" placeholder="Search" name="search" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <input type="number" [(ngModel)]="minPrice" placeholder="Min Price" name="minPrice" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <input type="number" [(ngModel)]="maxPrice" placeholder="Max Price" name="maxPrice" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <button type="submit" class="btn btn-primary w-100">Filter</button>
+      </div>
     </form>
   </div>
 
-  <div *ngIf="products.length === 0">No products available.</div>
-  <div class="product-list" *ngIf="products.length > 0">
-    <div class="product-item" *ngFor="let product of products">
-      <h2>{{ product.name }}</h2>
-      <img [src]="product.image" alt="{{ product.name }}" />
-      <p>{{ product.description }}</p>
-      <p><strong>Price:</strong> ${{ product.price }}</p>
-      <button class="btn" (click)="addToCart(product.id)">Add to Cart</button>
+  <div *ngIf="products.length === 0" class="alert alert-warning">No products available.</div>
+  <div class="row product-list" *ngIf="products.length > 0">
+    <div class="col-md-4 mb-4" *ngFor="let product of products">
+      <div class="card h-100 shadow-sm">
+        <img [src]="getImageUrl(product.image)" class="card-img-top" alt="{{ product.name }}" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
+          <button class="btn btn-primary mt-auto" (click)="addToCart(product.id)">Add to Cart</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

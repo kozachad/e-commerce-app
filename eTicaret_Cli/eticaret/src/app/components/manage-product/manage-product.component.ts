@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterOutlet, ReactiveFormsModule],
   templateUrl: './manage-product.component.html',
-  styleUrls: ['./manage-product.component.css']
+  styleUrl: './manage-product.component.css'
 })
 export class ManageProductComponent implements OnInit {
   products: any[] = [];
@@ -37,6 +37,12 @@ export class ManageProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUserProducts();
+  }
+
+  getImageUrl(url : string): string {
+    var realUrl = `https://localhost:7189${url}`;
+    console.log("url?",realUrl);
+    return realUrl;
   }
 
   getUserProducts(): void {
@@ -101,7 +107,6 @@ export class ManageProductComponent implements OnInit {
     if (this.editForm.valid && this.selectedProduct) {
       const updatedProduct = { ...this.selectedProduct, ...this.editForm.value };
       console.log('Updating product: ', updatedProduct); // Debugging line
-      
   
       if (this.selectedFile) {
         console.log('Selected file: ', this.selectedFile); // Debugging line

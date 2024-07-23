@@ -16,6 +16,12 @@ export class CartService {
     return this.http.get<any>("https://localhost:7189/api/Carts?userId=" + userId);
   }
 
+  deleteProductInCard(data : CartRequest): Observable<void>{
+    return this.http.post<void>("https://localhost:7189/api/Carts/DeleteProduct",data);
+  }
+
+
+
   addToCart(request : CartRequest): Observable<any> {
     return this.http.post<any>("https://localhost:7189/api/Carts",request);
   }
